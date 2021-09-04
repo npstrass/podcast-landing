@@ -55,8 +55,8 @@ ul {
 
 li:hover {
   cursor: pointer;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #EA3788, 0 0 0.5em #EA3788,
-    0 0 0.1em #EA3788, 0 10px 3px #000;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ea3788, 0 0 0.5em #ea3788,
+    0 0 0.1em #ea3788, 0 10px 3px #000;
   animation: flicker 2s linear infinite;
 }
 
@@ -69,20 +69,20 @@ li:hover {
   letter-spacing: -0.25rem;
   max-width: 800px;
   font-size: 6rem;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #EA3788,
-    0 0 82px #EA3788, 0 0 92px #EA3788, 0 0 102px #EA3788, 0 0 151px #EA3788;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #ea3788,
+    0 0 82px #ea3788, 0 0 92px #ea3788, 0 0 102px #ea3788, 0 0 151px #ea3788;
 }
 
 .logo b {
   font-weight: 400;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #EA3788, 0 0 0.5em #EA3788,
-    0 0 0.1em #EA3788, 0 10px 3px #000;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ea3788, 0 0 0.5em #ea3788,
+    0 0 0.1em #ea3788, 0 10px 3px #000;
   animation: flicker 2s linear infinite;
 }
 
 .logo span {
-  animation: blink linear 8s;
-  animation-delay: 3s;
+  animation: blink 6s normal forwards;
+  animation-delay: 5s;
 }
 
 @keyframes flicker {
@@ -256,4 +256,31 @@ li:hover {
     text-shadow: 0 0 1em #000, 0 0 8px rgba(0, 0, 0, 0.15),
       -10px 0px 3px rgba(0, 0, 0, 0.15), 0 15px 3px rgba(0, 0, 0, 0.1);
   }
+}
+
+.logo {
+  position: relative;
+}
+
+.switch {
+  position: absolute;
+  top: 6rem;
+  left: 555px;
+  padding: 0 1rem;
+}
+.switch div {
+  margin-bottom: .25rem;
+  height: .25rem;
+  width: .25rem;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.switch div:last-of-type {
+  height: 1rem;
+  border-radius: 50px;
+}
+
+.switch:hover {
+  cursor: pointer;
 }
